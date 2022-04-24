@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ujian_navigation_farhan_fadhilah.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerStepOneFragment"
+            app:destination="@id/registerStepOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerStepOneFragment"
+        android:name="com.example.ujian_navigation_farhan_fadhilah.RegisterStepOneFragment"
+        android:label="fragment_register_step_one"
+        tools:layout="@layout/fragment_register_step_one" >
+        <action
+            android:id="@+id/action_registerStepOneFragment_to_resultRegisterStepOneFragment2"
+            app:destination="@id/resultRegisterStepOneFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultRegisterStepOneFragment2"
+        android:name="com.example.ujian_navigation_farhan_fadhilah.ResultRegisterStepOneFragment"
+        android:label="fragment_result_register_step_one"
+        tools:layout="@layout/fragment_result_register_step_one" >
+        <action
+            android:id="@+id/action_resultRegisterStepOneFragment2_to_registerStepTwoFragment2"
+            app:destination="@id/registerStepTwoFragment2" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerStepTwoFragment2"
+        android:name="com.example.ujian_navigation_farhan_fadhilah.RegisterStepTwoFragment"
+        android:label="fragment_register_step_two"
+        tools:layout="@layout/fragment_register_step_two" >
+        <action
+            android:id="@+id/action_registerStepTwoFragment2_to_resultRegisterStepOneFragment2"
+            app:destination="@id/resultRegisterStepOneFragment2" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="integer" />
+    </fragment>
+</navigation>

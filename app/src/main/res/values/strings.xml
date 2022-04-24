@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ujian_navigation_farhan_fadhilah</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Selamat Datang</string>
+    <string name="subtitle_welcome">Aplikasi SBMPTN</string>
+    <string name="register_text">Belum punya akun?</string>
+    <string name="register_text_two">Daftar</string>
+    <string name="masuk">Masuk</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="input_fullname">Nama panjang</string>
+    <string name="input_age">Umur</string>
+    <string name="input_school">SMA</string>
+    <string name="input_graduate">Tahun lulus</string>
+    <string name="input_university">Kampus yang dipilih</string>
+    <string name="input_major">Jurusan yang dipiih</string>
+    <string name="btn_preview">Preview</string>
+    <string name="btn_next">Lanjut</string>
+</resources>
